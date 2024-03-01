@@ -62,14 +62,14 @@ generatePass.addEventListener('click', generatePassword);
 passwordLength.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
         generatePassword();
-        passwordBox.blur();
+        passwordLength.blur();
     }
 })
 document.addEventListener('keydown', (e) => {
     // ' ' represents space bar in some browsers
     if (e.key === ' ' || e.key === 'Spacebar') {
         generatePassword();
-        passwordBox.blur();
+        passwordLength.blur();
     }
 });
 copy.addEventListener('click', () => {

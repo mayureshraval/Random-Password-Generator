@@ -100,9 +100,6 @@ button:active{
     border: 1px solid red;
 }
 @media (max-width:400px) {
-    .card{
-        top:34vh;
-    }
     button{
         font-size: 0.6rem;
     }
