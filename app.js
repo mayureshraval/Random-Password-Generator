@@ -69,6 +69,7 @@ document.addEventListener('keydown', (e) => {
     // ' ' represents space bar in some browsers
     if (e.key === ' ' || e.key === 'Spacebar') {
         generatePassword();
+        passwordBox.blur();
     }
 });
 copy.addEventListener('click', () => {
