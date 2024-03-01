@@ -62,6 +62,7 @@ generatePass.addEventListener('click', generatePassword);
 passwordLength.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
         generatePassword();
+        passwordBox.blur();
     }
 })
 document.addEventListener('keydown', (e) => {
