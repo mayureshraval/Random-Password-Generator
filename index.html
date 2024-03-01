@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="password.png" type="image/x-icon">
+    <title>Random password generator</title>
+</head>
+<body>
+    <div class="card">
+    <h3>Random Password Generator</h3>
+        <div class="lengthContainer">
+            <input type="number" min="8" max="500" id="passwordLength" placeholder="Password length (min-8, max-500)">
+        </div>
+        <textarea id="passwordBox" cols="30" rows="10" readonly placeholder="This password will have atleast 1 lowercase, 1 uppercase, 1 special character, 1 number."></textarea>
+        <div class="btns">
+            <button id="generatePass">Generate&nbsp;Password</button>
+            <button id="copy">Copy&nbsp;Password</button>
+        </div>
+        <p class="description">Password Strength: None</p>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
